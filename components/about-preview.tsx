@@ -17,7 +17,7 @@ export default function AboutPreview() {
             viewport={{ once: true }}
             className="relative h-[500px] w-full"
           >
-            <Image src="/placeholder.svg?height=800&width=600" alt="Kajol Photographer" fill className="object-cover" />
+            <Image src="/about.jpeg?height=800&width=600" alt="Kajol Photographer" fill className="object-cover" />
             <div className="absolute -bottom-6 -right-6 bg-white p-6 shadow-lg max-w-xs hidden lg:block">
               <p className="text-primary-800 italic font-playfair text-lg">
                 "I believe in capturing authentic moments that tell your unique story."

@@ -15,7 +15,7 @@ const portfolioData = {
       .fill(null)
       .map((_, i) => ({
         id: i,
-        src: `/placeholder.svg?height=800&width=600&text=Family ${i + 1}`,
+        src: `/DSC04518.webp&width=600&text=Family ${i + 1}`,
         alt: `Family portrait ${i + 1}`,
       })),
   },
@@ -26,7 +26,7 @@ const portfolioData = {
       .fill(null)
       .map((_, i) => ({
         id: i,
-        src: `/placeholder.svg?height=800&width=600&text=Maternity ${i + 1}`,
+        src: `/DSC04518.webp?height=800&width=600&text=Maternity ${i + 1}`,
         alt: `Maternity portrait ${i + 1}`,
       })),
   },
@@ -37,7 +37,7 @@ const portfolioData = {
       .fill(null)
       .map((_, i) => ({
         id: i,
-        src: `/placeholder.svg?height=800&width=600&text=Baby ${i + 1}`,
+        src: `/DSC04518.webp?height=800&width=600&text=Baby ${i + 1}`,
         alt: `Baby portrait ${i + 1}`,
       })),
   },
@@ -48,7 +48,7 @@ const portfolioData = {
       .fill(null)
       .map((_, i) => ({
         id: i,
-        src: `/placeholder.svg?height=800&width=600&text=Couple ${i + 1}`,
+        src: `/DSC04518.webp?height=800&width=600&text=Couple ${i + 1}`,
         alt: `Couple portrait ${i + 1}`,
       })),
   },
@@ -59,7 +59,7 @@ const portfolioData = {
       .fill(null)
       .map((_, i) => ({
         id: i,
-        src: `/placeholder.svg?height=800&width=600&text=Model ${i + 1}`,
+        src: `/DSC04518.webp?height=800&width=600&text=Model ${i + 1}`,
         alt: `Model portrait ${i + 1}`,
       })),
   },
@@ -70,7 +70,7 @@ const portfolioData = {
       .fill(null)
       .map((_, i) => ({
         id: i,
-        src: `/placeholder.svg?height=800&width=600&text=Corporate ${i + 1}`,
+        src: `/DSC04518.webp?height=800&width=600&text=Corporate ${i + 1}`,
         alt: `Corporate portrait ${i + 1}`,
       })),
   },
@@ -78,7 +78,7 @@ const portfolioData = {
 
 export default function CategoryPage({ params }: { params: { category: string } }) {
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
-  const category = params.category
+  const category = params?.category
   const portfolioCategory = portfolioData[category as keyof typeof portfolioData]
 
   if (!portfolioCategory) {

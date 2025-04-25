@@ -69,7 +69,7 @@ export default function PortfolioPage() {
                 <Link href={`/portfolio/${category.slug}`}>
                   <div className="relative h-[400px] w-full overflow-hidden">
                     <Image
-                      src={`/placeholder.svg?height=600&width=400&text=${category.name}`}
+                      src={`/DSC04518.webp?height=600&width=400&text=${category.name}`}
                       alt={category.name}
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-105"

@@ -16,27 +16,27 @@ const categories = [
 
 const featuredImages = [
   {
-    src: "/placeholder.svg?height=600&width=400",
+    src:  "/DSC04518.webp?height=600&width=400",
     alt: "Family portrait",
     category: "family",
   },
   {
-    src: "/placeholder.svg?height=600&width=400",
+    src:  "/DSC04518.webp?height=600&width=400",
     alt: "Maternity session",
     category: "maternity",
   },
   {
-    src: "/placeholder.svg?height=600&width=400",
+    src: "/DSC04518.webp?height=600&width=400",
     alt: "Baby portrait",
     category: "baby",
   },
   {
-    src: "/placeholder.svg?height=600&width=400",
+    src: "/DSC04518.webp?height=600&width=400",
     alt: "Couple session",
     category: "couple",
   },
   {
-    src: "/placeholder.svg?height=600&width=400",
+    src:  "/DSC04518.webp?height=600&width=400",
     alt: "Model portrait",
     category: "model",
   },

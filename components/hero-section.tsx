@@ -7,9 +7,9 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 
 const images = [
-  "/placeholder.svg?height=1080&width=1920",
-  "/placeholder.svg?height=1080&width=1920",
-  "/placeholder.svg?height=1080&width=1920",
+  "/DSC04518.webp?height=1080&width=1920",
+  "/DSC01130.webp?height=1080&width=1920",
+  "/DSC09452.webp?height=1080&width=1920",
 ]
 
 export default function HeroSection() {
@@ -23,7 +23,7 @@ export default function HeroSection() {
   }, [])
 
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className="relative h-screen w-full ">
       {images.map((src, index) => (
         <div
           key={index}
@@ -32,17 +32,23 @@ export default function HeroSection() {
           }`}
         >
           <Image
-            src={src || "/placeholder.svg"}
+            src={src || "/DSC04518.webp"}
             alt={`Hero image ${index + 1}`}
             fill
             priority
             className="object-cover"
           />
+
+          {/* Darken whole background */}
           <div className="absolute inset-0 bg-black/20" />
+
+          {/* Add top shadow gradient */}
+          <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black/40 to-transparent z-10" />
         </div>
       ))}
 
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+      {/* Text content */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -75,7 +81,8 @@ export default function HeroSection() {
         </motion.div>
       </div>
 
-      <div className="absolute bottom-8 left-0 right-0 flex justify-center space-x-2">
+      {/* Navigation dots */}
+      <div className="absolute bottom-8 left-0 right-0 flex justify-center space-x-2 z-20">
         {images.map((_, index) => (
           <button
             key={index}
