@@ -23,11 +23,11 @@ export default function HeroSection() {
   }, [])
 
   return (
-    <div className="relative h-screen w-full ">
+    <div className="relative h-screen w-full  ">
       {images.map((src, index) => (
         <div
           key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
+          className={`absolute inset-0 transition-opacity duration-1000  ${
             index === currentImage ? "opacity-100" : "opacity-0"
           }`}
         >
@@ -36,14 +36,14 @@ export default function HeroSection() {
             alt={`Hero image ${index + 1}`}
             fill
             priority
-            className="object-cover"
+            className="object-cover "
           />
 
           {/* Darken whole background */}
           <div className="absolute inset-0 bg-black/20" />
 
           {/* Add top shadow gradient */}
-          <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black/40 to-transparent z-10" />
+          <div className="absolute top-0 left-0 right-0 h-32" />
         </div>
       ))}
 

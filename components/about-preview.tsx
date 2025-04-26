@@ -34,7 +34,7 @@ export default function AboutPreview() {
             <h2 className="text-3xl md:text-4xl font-playfair font-bold text-primary-800 mb-6">Hello, I'm Kajol</h2>
             <p className="text-neutral-600 mb-4">
               I'm a Brisbane-based photographer with a passion for capturing the beauty in everyday moments. My journey
-              in photography began over 8 years ago, and I've had the privilege of documenting countless special
+              in photography began over 5 years ago, and I've had the privilege of documenting countless special
               occasions for families across Queensland.
             </p>
             <p className="text-neutral-600 mb-6">
