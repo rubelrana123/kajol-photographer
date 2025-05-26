@@ -7,9 +7,9 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 
 const images = [
-  "/DSC04518.webp?height=1080&width=1920",
-  "/DSC01130.webp?height=1080&width=1920",
-  "/DSC09452.webp?height=1080&width=1920",
+  "/KSK05784.jpg?height=1080&width=1920",
+  "banner2.jpg?height=1080&width=1920",
+  "/banner3.jpg?height=1080&width=1920",
 ]
 
 export default function HeroSection() {
@@ -23,6 +23,8 @@ export default function HeroSection() {
   }, [])
 
   return (
+ 
+    <div>
     <div className="relative h-screen w-full  ">
       {images.map((src, index) => (
         <div
@@ -94,6 +96,7 @@ export default function HeroSection() {
           />
         ))}
       </div>
+    </div>
     </div>
   )
 }

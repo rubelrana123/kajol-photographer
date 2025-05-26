@@ -41,7 +41,7 @@ const featuredImages = [
     category: "model",
   },
   {
-    src: "/placeholder.svg?height=600&width=400",
+    src:  "/DSC04518.webp?height=600&width=400",
     alt: "Corporate headshot",
     category: "corporate",
   },
